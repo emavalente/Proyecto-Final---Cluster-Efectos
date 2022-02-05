@@ -1,0 +1,34 @@
+/* BARRA NOTIFICACION */
+.header-oferta {
+    display: none;
+  }
+
+/* HEADER */
+header {
+    background-image: $fondo-header-principal;
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh;
+    .tituloHeader {
+        /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
+        display: inline-block;
+        width: 100%;
+        margin-top: 70vh;
+        text-align: center;
+        h1 {
+            margin-left: -20px;
+            margin-bottom: 0px;
+            color: $color-primero;
+            font-family: $font-logo;
+            font-size: 4.5rem;
+            text-shadow: 6px 0px $color-segundo, 12px 0px $color-tercero, 18px 0px $color-cuarto, 24px 0px $color-quinto;
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 1rem;
+            color: #ffff;
+        }
+    }
+      
+}

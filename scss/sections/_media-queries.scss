@@ -1,0 +1,35 @@
+/* RESPONSIVE MOBILE-FIRST */
+@media screen and (min-width:1024px) {
+    
+    #checkbox {
+        &:not(:checked) ~ .menu-list {
+            position: relative;
+            margin-right: 70px;
+        }
+        &:not(:checked) ~ .menu-list li {
+            display: inline-block;
+            line-height: 60px;
+            margin: 0 20px;
+        }
+        &:checked ~ .menu-list {
+            position: relative;
+            height: 60px;
+            top: 0;
+            background: none;
+            transition: none;
+            text-align: center;
+            margin-right: 70px;
+            li {
+                display: inline-block;
+                line-height: 60px;
+                margin: 0 20px;
+                transition: none;
+            }  
+        }
+    }
+    .menu-btn {
+        display: none;
+    }
+}
+
+
