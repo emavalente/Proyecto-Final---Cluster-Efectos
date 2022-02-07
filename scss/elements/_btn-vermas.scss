@@ -3,16 +3,16 @@
   max-width: 300px;
   padding: 10px 70px;
   margin: 50px 0;
-  background-color: #121617;
-  border: solid 1px #c70039;
+  background-color: $color-fondo-btnvermas;
+  border: solid 1px $color-border-btnvermas;
   border-radius: 0.4rem;
+  font-family: $font-general;
   font-size: 1rem;
-  color: #ffffff;
+  color: $color-texto-general;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background-color: #0c0d0f;
-    color: #ffffff;
+    background-color: $color-hover-btnvermas;
   }
   &:active {
     transform: scale(0.9);

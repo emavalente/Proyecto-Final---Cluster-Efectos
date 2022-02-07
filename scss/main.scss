@@ -1,28 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* FUENTE EXTERNA */
-// @font-face {
-//     font-family: Crystal Radio Kit;
-//     src: url(../../fonts/Cluster-\(CRYSTALR\).TTF) format("truetype");
-//   }
-
 //IMPORTACION DE VARIABLES
 @import "./elements/variables";
 
+//RESET Y GENERALES
+@import "./elements/reset";
+
 //IMPORTACION DE SECCIONES Y ELEMENTOS
+@import "./elements/base";
 @import "./elements/navegacion";
-@import "./elements/titulos-de-seccion";
 @import "./elements/btn-vermas";
 @import "./sections/index";
 @import "./sections/productos";
 @import "./sections/artistas";
 @import "./sections/taller";
 @import "./sections/contacto";
-@import "./sections/media-queries"
+@import "./sections/media-queries";
 
 
 

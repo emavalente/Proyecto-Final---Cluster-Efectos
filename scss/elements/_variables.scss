@@ -1,6 +1,7 @@
 //Fuentes
-$font-general: "Encode Sans", sans-serif;
-$font-titulos: "Fira Sans", sans-serif;
+$font-general: 'Encode Sans', sans-serif;
+$font-titulos: 'Fira Sans', sans-serif;
+$font-menu: 'Fira Sans', sans-serif;
 $font-logo: Crystal Radio Kit;
 
 //Paleta de Colores
@@ -10,11 +11,19 @@ $color-tercero: #c70039;
 $color-cuarto: #900c3f;
 $color-quinto: #581845;
 $color-sexto: #000000;
+$color-btn-menu: #c70039;
 $color-texto-general: #ffffff;
 $color-titulo-seccion: #ff5733;
 $color-subtitulo:#c70039;
+$color-outline-link: #ff5733;
+$color-border-btnvermas: #c70039;
+$color-fondo-link: #581845;
+$color-fondo-notif: #c70039;
+$color-fondo-btnvermas: #0c0d0f;
+$color-hover-btnvermas: #141518;
 
 //Tamaños
 
 //Fondos
 $fondo-header-principal: url(../img/banners/banner_movile03.png);
+$fondo-subs: url(../img/banners/banner_002.png);

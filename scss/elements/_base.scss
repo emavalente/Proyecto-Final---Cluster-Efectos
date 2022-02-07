@@ -1,0 +1,39 @@
+body {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #1b1a1a;
+  main {
+    width: 100%;
+  }
+}
+
+.contenedorCentrado {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.seccionColumna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+.boxTituloSeccion {
+  align-self: flex-start;
+  margin-left: 0px;
+  margin-bottom: 40px;
+  .tituloSeccion {
+    font-family: $font-titulos;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-titulo-seccion;
+  }
+  p {
+    font-size: 1rem;
+    color: $color-subtitulo;
+    line-height: 1.5rem;
+  }
+}
