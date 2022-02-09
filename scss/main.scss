@@ -1,19 +1,24 @@
 //IMPORTACION DE VARIABLES
-@import "./elements/variables";
+@import "./utilities/variables";
 
 //RESET Y GENERALES
-@import "./elements/reset";
+@import "./base/reset";
+@import "./base/base";
 
-//IMPORTACION DE SECCIONES Y ELEMENTOS
-@import "./elements/base";
-@import "./elements/navegacion";
-@import "./elements/btn-vermas";
-@import "./sections/index";
-@import "./sections/productos";
-@import "./sections/artistas";
-@import "./sections/taller";
-@import "./sections/contacto";
-@import "./sections/media-queries";
+//IMPORTACION DE COMPONENTS
+@import "./components/btn-vermas";
+//IMPORTACION DE LAYOUTS
+@import "./layout/navegacion";
 
+//IMPORTACION DE VIEWS
+@import "./views/index";
+@import "./views/productos";
+@import "./views/artistas";
+@import "./views/taller";
+@import "../views/contacto";
 
+//IMPORTACION DE LAYOUTS
+@import "./layout/footer";
 
+//IMPORTACION DE MEDIAQUERIES
+@import "./utilities/media-queries";
