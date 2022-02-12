@@ -1,35 +1,43 @@
+//ESTE PARTIAL CONTIENE ESTILOS GENERALES.
 body {
   font-family: "Encode Sans", sans-serif;
   font-weight: 300;
-  color: #ffffff;
-  background-color: #1b1a1a;
+  color: $color-texto-general;
+  background-color: $color-fondo-body;
   main {
     width: 100%;
   }
 }
 
-.contenedorCentrado {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
+.centrado {
+  @extend %contenedorCentrado;
 }
 
 .seccionColumna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
 
 .boxTituloSeccion {
+  width: 100%;
   align-self: flex-start;
   margin-left: 0px;
   margin-bottom: 40px;
+  border-bottom: 1px solid $color-quinto;
   .tituloSeccion {
-    font-family: $font-titulos;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $color-titulo-seccion;
+    @extend %tituloDeSeccion;
   }
   p {
     font-size: 1rem;

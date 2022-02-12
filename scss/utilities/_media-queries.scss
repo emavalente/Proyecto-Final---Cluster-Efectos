@@ -21,7 +21,6 @@
       }
     }
     .menu-barra {
-      // -- Logo --
       .menu-logo {
         left: 47.5%;
         top: 40px;
@@ -36,6 +35,8 @@
       }
     }
   }
+
+  // VIEWS - INDEX //
 
   //REVIEWS
   .boxVideos {
@@ -53,18 +54,39 @@
       justify-content: space-evenly;
     }
   }
+
+  // VIEWS - ARTISTAS //
+
+  .galeriaArtistas {
+    .card-artist {
+      width: 40%;
+    }
+  }
+
+  // VIEWS - TALLER //
+
+  .taller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .textoTaller {
+      margin: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }
 
-//* RESPONSIVE - MEDIAS QUERIES DESKTOP CHICO - MOBILE-FIRST *//
+// RESPONSIVE - MEDIAS QUERIES DESKTOP CHICO - MOBILE-FIRST
 
 @media screen and (min-width: 1024px) {
   //NAVEGACION
   .navegacion {
     .menu-barra {
-      /* -- Logo -- */
       .menu-logo {
         left: 48%;
-        top: 45px;
+        top: 35px;
         .logo {
           width: 50px;
           height: 50px;
@@ -166,6 +188,39 @@
           transform: scale(0.9);
           transition: all 150ms;
         }
+      }
+    }
+  }
+}
+
+//* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+
+@media screen and (min-width: 1440px) {
+  /* Top Ventas (Index) */
+  .galeriaTop {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(../images/productos/top/fondo_top_500x300.png);
+    background-position: center center;
+  }
+
+  /* Formulario Suscripcion (Index) */
+  .textoSub {
+    width: 25vw;
+    h3 {
+      width: 290px;
+    }
+  }
+}
+//* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+
+@media screen and (min-width: 1920px) {
+  /* Formulario Suscripcion (Index) */
+  .contenedorSub {
+    justify-content: center;
+    .textoSub {
+      h3 {
+        width: 310px;
       }
     }
   }

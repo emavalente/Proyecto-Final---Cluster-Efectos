@@ -11,7 +11,7 @@
     - taller.html (FALTA)
     - contacto.html (FALTA)
 
-4.- Se aplican texto alternativo a imagenes. (FALTA)
+4.- Se aplican textos alternativos a imagenes. (FALTA)
 
 5.- Se aplica mapa de sitio. (FALTA)
 

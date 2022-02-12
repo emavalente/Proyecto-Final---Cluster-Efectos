@@ -1,0 +1,32 @@
+//ESTE PARTIAL CONTIENE EL COMPONENTE CARD-ARTISTA
+.card-artist {
+    margin: 30px;
+    width: 80%;
+    max-width: 350px;
+    background-color: $color-sexto;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .artist-hero {
+      width: 100%;
+    }
+    .artist-text {
+      width: 95%;
+      h2 {
+        margin: 10px 0px;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.2rem;
+        color: $color-subtitulo;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    &:hover {
+      transform:scale(105%);
+      transition: all .3s;
+    }
+  }

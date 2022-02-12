@@ -1,24 +1,29 @@
-//IMPORTACION DE VARIABLES
-@import "./utilities/variables";
+//IMPORTACION DE UTILIDADES
+@import './utilities/variables';
+@import './utilities/extend';
+@import './utilities/mixin';
+@import './utilities/map';
 
 //RESET Y GENERALES
-@import "./base/reset";
-@import "./base/base";
+@import './base/reset';
+@import './base/base';
+
+//IMPORTACION DE LAYOUTS COMPARTIDOS
+@import './layout/navegacion';
 
 //IMPORTACION DE COMPONENTS
-@import "./components/btn-vermas";
-//IMPORTACION DE LAYOUTS
-@import "./layout/navegacion";
+@import './components/card-producto';
+@import './components/card-artista';
 
 //IMPORTACION DE VIEWS
-@import "./views/index";
-@import "./views/productos";
-@import "./views/artistas";
-@import "./views/taller";
-@import "../views/contacto";
+@import './views/index';
+@import './views/productos';
+@import './views/artistas';
+@import './views/taller';
+@import './views/contacto';
 
 //IMPORTACION DE LAYOUTS
-@import "./layout/footer";
+@import './layout/footer';
 
 //IMPORTACION DE MEDIAQUERIES
-@import "./utilities/media-queries";
+@import './utilities/media-queries';

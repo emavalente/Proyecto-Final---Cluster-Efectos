@@ -1,4 +1,9 @@
-// HEADER
+//BOTONES VERMAS CON MIXIN
+.botonVerMas {
+  @include btnVerMas($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);
+}
+
+//HEADER
 .headerIndex {
   background-image: $fondo-header-principal;
   background-position: center center;
@@ -27,7 +32,8 @@
   }
 }
 
-// NOSOTROS
+//NOSOTROS
+
 .boxNosotros {
   overflow: auto;
   margin-bottom: 50px;
@@ -168,7 +174,7 @@
       position: absolute;
       top: 70%;
       left: 20px;
-      h3 {
+      h4 {
         font-family: "Fira Sans", sans-serif;
         font-size: 1.2rem;
         color: #ff5733;

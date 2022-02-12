@@ -12,19 +12,27 @@ $color-tercero: #c70039;
 $color-cuarto: #900c3f;
 $color-quinto: #581845;
 $color-sexto: #000000;
-$color-btn-menu: #c70039;
+
+//Colores Generales
+$color-fondo-body: #0f0e0e;
 $color-texto-general: #ffffff;
 $color-titulo-seccion: #ff5733;
 $color-subtitulo:#c70039;
+
+//Colores Navegacion
+$color-btn-menu: #c70039;
 $color-outline-link: #ff5733;
-$color-border-btnvermas: #c70039;
 $color-fondo-link: #581845;
 $color-fondo-notif: #c70039;
-$color-fondo-btnvermas: #141518;
-$color-hover-btnvermas: #0c0d0f;
+
+//Colores Botones
+$color-border-btn: #c70039;
+$color-fondo-btn: #141518;
+$color-hover-btn: #0c0d0f;
 
 //Tamaños
 
-//Fondos
+//Fondos de Banners
 $fondo-header-principal: url(../img/banners/banner_movile03.png);
+$fondo-header-taller: url(../img/banners/banner_005.png);
 $fondo-subs: url(../img/banners/banner_002.png);

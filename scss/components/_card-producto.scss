@@ -1,0 +1,89 @@
+.cardProducto {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: $color-sexto;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  .contenedor-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contenedor-hero {
+      width: 40%;
+      padding: 20px;
+      .producto-hero {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .contenedor-text {
+      width: 60%;
+      height: 300px;
+      text-align: left;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        margin: 10px 0px;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.5rem;
+        color: #c70039;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 0.7rem;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 60%;
+        padding: 5px;
+        background-color: $color-fondo-btn;
+        border: solid 1px $color-border-btn;
+        border-radius: 0.4rem;
+        font-family: $font-general;
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: $color-texto-general;
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          transform: scale(0.9);
+          transition: all 100ms;
+        }
+      }
+      a {
+        font-size: 0.7rem;
+        color: $color-texto-general;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .contenedor-clasificacion {
+    padding: 20px;
+    a {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: $color-texto-general;
+      margin-right: 10px;
+      .fa-star {
+        color: $color-primero;
+        font-size: 1rem;
+        margin-right: 5px;
+      }
+      .fa-comment-dots {
+        color: $color-segundo;
+        font-size: 1rem;
+        margin-right: 5px;
+      }
+    }
+  }
+}

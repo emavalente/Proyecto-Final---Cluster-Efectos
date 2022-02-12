@@ -1,21 +1,22 @@
-.botonVerMas {
-  width: 90%;
+@mixin btnVerMas($bgcolor, $bghover, $bdrcolor, $txtcolor, $pad) {
   max-width: 300px;
-  padding: 10px 70px;
   margin: 50px 0;
-  background-color: $color-fondo-btnvermas;
-  border: solid 1px $color-border-btnvermas;
+  padding: $pad;
+  background-color: $bgcolor;
+  border: solid 1px $bdrcolor;
   border-radius: 0.4rem;
   font-family: $font-general;
   font-size: 0.8rem;
-  color: $color-texto-general;
+  color: $txtcolor;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background-color: $color-hover-btnvermas;
+    background-color: $bghover;
   }
   &:active {
     transform: scale(0.9);
     transition: all 100ms;
   }
 }
+
+//APLICADO A BOTONES "VER MAS"
