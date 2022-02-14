@@ -1,0 +1,33 @@
+$resaltarPalabras: (
+    efectos: $color-segundo,
+    dorado: $color-primero,
+    audio: $color-tercero,
+    celeste: #5fbde2,
+    blanco: #ffffff,
+);
+
+//BUCLE
+
+@each $palabra, $color in $resaltarPalabras {
+    .#{$palabra} {
+        color: $color;
+    }
+}
+//APLICADO A TEXTO "NOSOTROS" EN INDEX.
+
+
+
+$coloresRedes: (
+    facebook: #3c3edf,
+    instagram:#fd5949,
+    youtube: #ff2020,
+    twitter: #60a5ff,
+);
+
+//BUCLE
+@each $red, $color in $coloresRedes {
+    .#{$red} {
+        color: $color
+    }
+}
+//APLICADO A ICONOS REDES EN FOOTER.

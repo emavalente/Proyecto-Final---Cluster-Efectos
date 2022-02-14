@@ -1,0 +1,22 @@
+@mixin btnVerMas($bgcolor, $bghover, $bdrcolor, $txtcolor, $pad) {
+  max-width: 300px;
+  margin: 50px 0;
+  padding: $pad;
+  background-color: $bgcolor;
+  border: solid 1px $bdrcolor;
+  border-radius: 0.4rem;
+  font-family: $font-general;
+  font-size: 0.8rem;
+  color: $txtcolor;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    background-color: $bghover;
+  }
+  &:active {
+    transform: scale(0.9);
+    transition: all 100ms;
+  }
+}
+
+//APLICADO A BOTONES "VER MAS" EN PARTIAL /views/_index.scss.

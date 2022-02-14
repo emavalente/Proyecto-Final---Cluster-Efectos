@@ -1,0 +1,89 @@
+/* ESTILOS NAVEGADOR */
+.navegacion {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  /* BARRA NOTIFICACION */
+  .header-oferta {
+    display: none;
+  }
+  .menu-barra {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-sexto;
+    /* -- Logo -- */
+    .menu-logo {
+      position: absolute;
+      left: 45.5%;
+      top: 10px;
+      .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .menu-list {
+      padding-left: 0px;
+      list-style: none;
+      border-bottom-right-radius: 40%;
+      border-bottom-left-radius: 40%;
+      li {
+        .menu-link {
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          font-family: $font-menu;
+          text-decoration: none;
+          &:hover,
+          &:active {
+            color: #ffffff;
+            outline: solid 1px $color-outline-link;
+            background-color: $color-sexto;
+          }
+        }
+      }
+    }
+    #checkbox {
+      display: none;
+      &:not(:checked) ~ .menu-list {
+        position: fixed;
+        height: -50vh;
+      }
+      &:not(:checked) ~ .menu-list li {
+        display: none;
+      }
+      &:checked ~ .menu-list {
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 40vh;
+        background-color: $color-sexto;
+        overflow: hidden;
+        list-style: none;
+        text-align: center;
+        transition: all 0.2s;
+        li {
+          display: block;
+          line-height: 30px;
+          margin: 30px 0;
+          transition: all 0.4s;
+        }
+      }
+      &:checked ~ .menu-btn {
+        transform: rotate(180deg);
+        transition: .5s;
+      }
+    }
+    .menu-btn {
+      display: block;
+      font-size: 25px;
+      color: $color-btn-menu;
+      margin-left: 20px;
+      cursor: pointer;
+      transition: .5s;
+    }
+  }
+}

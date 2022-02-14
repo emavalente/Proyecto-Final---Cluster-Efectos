@@ -4,189 +4,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- KEYWORDS del SEO -->
+    <meta name="keywords" content="cluster, pedales, efectos, analógicos, instrumentos, guitarra, bajo, sesiones, productos, taller, contacto" />
+    <meta name="description" content="Fabricación y venta de pedales boutique de efectos analógicos para instrumentos musicales. Industria Argentina." />
     <!-- Favicon -->
     <link rel="icon" href="./img/icons/favicon_2.ico" />
     <!-- Fuentes GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;700&family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;500;700&family=Fira+Sans:wght@300;400;500;700;900&family=Parisienne&display=swap" rel="stylesheet" />
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Insersion Bootstrap -->
+    <!-- Animacion Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- Insersion CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Cluster | Pedales Analogicos para Guitarra y Bajo</title>
   </head>
   <body>
-    <!-- NavBar -->
-    <div class="fixed-top">
-      <div class="container-fluid header-oferta text-center">
+    <div class="navegacion">
+      <!-- Barra de Notificación -->
+      <div class="header-oferta">
         <p><span>ATENCION</span> Para compras de cualquiera de nuestros productos <strong>20% de descuento</strong> pagando en efectivo o transferencia.</p>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <!-- Logo Boton -->
-          <div class="navbar-logo">
-            <img src="./img/logo/logo_elefante.png" alt="logo Cluster" />
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="./pages/productos.html">Productos</a>
-              <a class="nav-link" href="./pages/artistas.html">Artista</a>
-              <a class="nav-link" href="./pages/taller.html">Taller</a>
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </div>
-          </div>
+      <!-- NavBar -->
+      <nav class="menu-barra">
+        <!-- Logo Boton -->
+        <div class="menu-logo">
+          <img src="./img/logo/logo_elefante.png" alt="logo Cluster" class="logo" />
         </div>
+        <!-- Boton Menu -->
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="menu-btn">
+          <i class="fa-solid fa-circle-chevron-down"></i>
+        </label>
+        <!-- Lista Menu -->
+        <ul class="menu-list">
+          <li><a class="menu-link" href="./pages/productos.html">Productos</a></li>
+          <li><a class="menu-link" href="./pages/artistas.html">Artistas</a></li>
+          <li><a class="menu-link" href="./pages/taller.html">Taller</a></li>
+          <li><a class="menu-link" href="./pages/contacto.html">Contacto</a></li>
+        </ul>
       </nav>
     </div>
-    <!-- Header -->
-    <header>
+    <header class="headerIndex">
       <div class="tituloHeader">
         <h1>CLUSTER</h1>
         <h2>Pedales de efectos para músicos</h2>
       </div>
     </header>
     <main>
-      <div class="container-fluid fondo3">
-        <section class="container seccionColumna">
-          <div class="boxTituloSeccion">
-            <h2 class="tituloSeccion">Sobre Nosotros</h2>
-          </div>
-          <div class="boxNosotros">
+      <section class="centrado seccionColumna errorColapse">
+        <div class="boxTituloSeccion">
+          <h3 class="tituloSeccion">Sobre Nosotros</h3>
+        </div>
+        <div class="boxNosotros" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+          <div class="textoNosotros">
             <p>
-              Somos una empresa fundada en Buenos Aires, Argentina. Desde el año 2002 nos propusimos comezar a fabricar <strong>efectos analógicos</strong> e insumos de alta calidad para músicos, productores, estudios de grabación, salas de ensayo e instituciones.<br /><br />
-              Nacimos como la división creativa de Midi-midi, con el sueño de fabricar una gama de pedales boutique que puedan no solo cambiar el sonido de los instrumentos, sino tambien, ser una herramienta util y creativa para cualquier músico. Ese sueño se materializó: primero fue nuestro
-              overdrive Tsunami-9. Luego, la familia de pedales se amplió: distorsiones, phasers, chorus, compresores, trémolos, auto-wahs.<br /><br />
-              No hace mucho comenzamos a lanzar nuestra <strong>LINEA DORADA</strong> que se destaca por ser particularmente diferentes en tecnologias de sonido y permitieran al músico tener y encontrar su <strong>audio propio</strong>.<br /><br />
+              Somos una empresa fundada en Buenos Aires, Argentina. Desde el año 2002 nos propusimos comezar a fabricar <strong class="efectos">efectos analógicos</strong> e insumos de alta calidad para músicos, productores, estudios de grabación, salas de ensayo e instituciones.<br />
+              Nacimos como la división creativa de Midi-midi, con el sueño de fabricar una gama de pedales boutique que puedan no solo cambiar el sonido de los instrumentos, sino tambien, ser una herramienta util y creativa para cualquier músico. <strong>Ese sueño se materializó:</strong> primero
+              fue nuestro overdrive Tsunami-9. Luego, la familia de pedales se amplió: distorsiones, phasers, chorus, compresores, trémolos, auto-wahs.<br /><br />
+            </p>
+            <p>
+              No hace mucho comenzamos a lanzar nuestra <strong class="dorado">LINEA DORADA</strong> que se destaca por ser particularmente diferentes en tecnologias de sonido y permitieran al músico tener y encontrar su <strong class="audio">audio propio</strong>.<br />
+              Estamos plenamente seguros que nuestros productos van a acompañarte durante toda tu carrera musical ofreciendote una herramienta fundamental en la que podras confiar y ajustar a tus necesidades. <br />
               Nuestro camino recien comienza y esperamos seguir creando más y más productos para ustedes! Te invitamos a conocer y probar nuestros efectos.
-              <strong>VIVA LA INDUSTRIA NACIONAL ARGENTINA!</strong>
+              <strong class="celeste">VIVA LA </strong><strong class="blanco">INDUSTRIA NACIONAL</strong><strong class="celeste"> ARGENTINA!</strong>
             </p>
           </div>
-        </section>
-      </div>
-      <div class="container-fluid fondo3">
-        <section class="container seccionColumna">
-          <div class="boxTituloSeccion">
-            <h2 class="tituloSeccion">Reviews</h2>
-            <p>Escucha algunos de nuestros sonidos.</p>
-          </div>
-          <div class="boxVideos">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/dRJpSeB7Th8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/pLzv43HwH3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5YR4wpsZlt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/iZa9RbhowI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <a class="botonVerMas" href="https://www.youtube.com/watch?v=iZa9RbhowI4&list=PL50BUDiyjBB6EQ2KwxnUx-WwsxIOj_3OQ">VER MAS</a>
-        </section>
-      </div>
-      <div class="container-fluid fondo3">
-        <section class="container seccionColumna">
-          <div class="boxTituloSeccion">
-            <h2 class="tituloSeccion">Top de Ventas</h2>
-            <p>Dos de nuestros productos más vendidos.</p>
-          </div>
-          <div class="galeriaTop">
-            <div class="top">
-              <img src="./img/productos/top/top_1_500x300.png" alt="imagen del producto" class="img-fluid" />
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-            <div class="top">
-              <img src="./img/productos/top/top_2_500x300.png" alt="imagen del producto" class="img-fluid" />
-            </div>
-          </div>
-          <a class="botonVerMas" href="pages/productos.html">VER MAS</a>
-        </section>
-      </div>
-      <div class="fondo3">
-        <section class="seccionSubs">
-          <div class="container boxFormulario">
-            <div class="textoSub">
-              <h3>No nos pierdas pisada!</h3>
-              <p>Enterate de lanzamientos, promociones y sorteos.</p>
-            </div>
-            <div>
-              <form action="destino.php" method="post" class="formularioSub">
-                <input type="text" name="buzon" placeholder="contacto@email.com" class="inputSub" />
-                <input type="button" value="SUSCRIBITE!" class="inputSub botonSub" />
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="container-fluid fondo3">
-        <section class="container seccionColumna">
-          <div class="boxTituloSeccion">
-            <h2 class="tituloSeccion">Sesiones con Cluster</h2>
-            <p>Nuestros efectos - Nuestros músicos</p>
-          </div>
-          <div class="contenedorSesiones">
-            <div class="boxSesion">
-              <img src="./img/sesiones/sesion_01_500x450.png" alt="palo pandolfo en sesiones cluster" />
-              <div class="cajaTexto">
-                <h3>Palo Pandolfo y la Hermandad</h3>
-                <p>Ojos del mañana | Sesiones con Cluster</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/banners/carousel/car_1.png" class="d-block w-100" alt="una artista mostrando sus pedales cluster" />
               </div>
-              <a href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play play-mobile"></i></a>
-              <div class="capa">
-                <a href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play"></i></a>
+              <div class="carousel-item">
+                <img src="./img/banners/carousel/car_2.png" class="d-block w-100" alt="imagen de varios pedales cluster" />
+              </div>
+              <div class="carousel-item">
+                <img src="./img/banners/carousel/car_3.png" class="d-block w-100" alt="un set de teclados con pedales cluster" />
+              </div>
+              <div class="carousel-item">
+                <img src="./img/banners/carousel/car_4.png" class="d-block w-100" alt="publicidad de una persona sosteniendo un pedal cluster" />
+              </div>
+              <div class="carousel-item">
+                <img src="./img/banners/carousel/car_5.png" class="d-block w-100" alt="un elefante en moto - envios a todo el pais" />
               </div>
             </div>
-            <div class="boxSesion">
-              <img src="./img/sesiones/sesion_02_500x450.png" alt="tito fargo en sesiones cluster" />
-              <div class="cajaTexto">
-                <h3>Tito Fargo</h3>
-                <p>Jamibs | Sesiones con Cluster</p>
-              </div>
-              <a href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play play-mobile"></i></a>
-              <div class="capa">
-                <a href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play"></i></a>
-              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="centrado seccionColumna">
+        <div class="boxTituloSeccion">
+          <h3 class="tituloSeccion">Reviews</h3>
+          <p>Escucha algunos de nuestros sonidos.</p>
+        </div>
+        <div class="boxVideos">
+          <div class="video" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dRJpSeB7Th8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pLzv43HwH3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5YR4wpsZlt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iZa9RbhowI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <a class="botonVerMas" href="https://www.youtube.com/watch?v=iZa9RbhowI4&list=PL50BUDiyjBB6EQ2KwxnUx-WwsxIOj_3OQ">VER MAS</a>
+      </section>
+      <section class="centrado seccionColumna">
+        <div class="boxTituloSeccion">
+          <h3 class="tituloSeccion">Top de Ventas</h3>
+          <p>Dos de nuestros productos más vendidos.</p>
+        </div>
+        <div class="galeriaTop" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+          <div class="top">
+            <img src="./img/productos/top/top_1_500x300.png" alt="imagen del producto" class="img-fluid" />
+          </div>
+          <div class="top">
+            <img src="./img/productos/top/top_2_500x300.png" alt="imagen del producto" class="img-fluid" />
+          </div>
+        </div>
+        <a class="botonVerMas" href="pages/productos.html">VER MAS</a>
+      </section>
+      <section class="contenedorConFondo" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+        <div class="boxFormulario">
+          <div class="textoSub">
+            <h3>No nos pierdas pisada!</h3>
+            <p>Enterate de lanzamientos, promociones y sorteos.</p>
+          </div>
+          <form action="#" method="post" class="formularioSub">
+            <input type="text" name="buzon" placeholder="contacto@email.com" class="inputSub" />
+            <input type="button" value="SUSCRIBITE!" class="inputSub botonSub" />
+          </form>
+        </div>
+      </section>
+      <section class="centrado seccionColumna">
+        <div class="boxTituloSeccion">
+          <h3 class="tituloSeccion">Sesiones con Cluster</h3>
+          <p>Nuestros efectos - Nuestros músicos</p>
+        </div>
+        <div class="contenedorSesiones">
+          <div class="boxSesion" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <img src="./img/sesiones/sesion_01_500x450.png" alt="palo pandolfo en sesiones cluster" />
+            <div class="cajaTexto">
+              <h4>Palo Pandolfo y la Hermandad</h4>
+              <p>Ojos del mañana | Sesiones con Cluster</p>
             </div>
-            <div class="boxSesion">
-              <img src="./img/sesiones/sesion_03_500x450.png" alt="Fernando Kabusacki en sesiones cluster" />
-              <div class="cajaTexto">
-                <h3>Fernando Kabusacki</h3>
-                <p>Capitulo 1 | Sesiones con Cluster</p>
-              </div>
-              <a href="https://www.youtube.com/watch?v=At2L_pj8T1c"><i class="fa-regular fa-circle-play play-mobile"></i></a>
-              <div class="capa">
-                <a href="https://www.youtube.com/watch?v=At2L_pj8T1c"><i class="fa-regular fa-circle-play"></i></a>
-              </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play play-mobile"></i></a>
+            <div class="capa">
+              <a target="_blank" href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play"></i></a>
             </div>
           </div>
-          <a class="botonVerMas" href="https://www.youtube.com/c/EfectosClusterAR/playlists">VER MAS</a>
-        </section>
-      </div>
+          <div class="boxSesion" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <img src="./img/sesiones/sesion_02_500x450.png" alt="tito fargo en sesiones cluster" />
+            <div class="cajaTexto">
+              <h4>Tito Fargo</h4>
+              <p>Jamibs | Sesiones con Cluster</p>
+            </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play play-mobile"></i></a>
+            <div class="capa">
+              <a target="_blank" href="https://www.youtube.com/watch?v=-VXIfMPyWmM&list=PL50BUDiyjBB799I06se1Y5oskTMZTdRXA"><i class="fa-regular fa-circle-play"></i></a>
+            </div>
+          </div>
+          <div class="boxSesion" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="50" data-aos-offset="0">
+            <img src="./img/sesiones/sesion_03_500x450.png" alt="Fernando Kabusacki en sesiones cluster" />
+            <div class="cajaTexto">
+              <h4>Fernando Kabusacki</h4>
+              <p>Capitulo 1 | Sesiones con Cluster</p>
+            </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=At2L_pj8T1c"><i class="fa-regular fa-circle-play play-mobile"></i></a>
+            <div class="capa">
+              <a target="_blank" href="https://www.youtube.com/watch?v=At2L_pj8T1c"><i class="fa-regular fa-circle-play"></i></a>
+            </div>
+          </div>
+        </div>
+        <a class="botonVerMas" target="_blank" href="https://www.youtube.com/c/EfectosClusterAR/playlists">VER MAS</a>
+      </section>
     </main>
-    <div class="container-fluid fondo3">
-      <footer class="container py-5">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/cluster.efectos" class="nav-link px-2 text-muted"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.youtube.com/c/EfectosClusterAR" class="nav-link px-2 text-muted"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.instagram.com/efectoscluster/?hl=es" class="nav-link px-2 text-muted"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/EfectosCluster" class="nav-link px-2 text-muted"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
-        <p class="text-center text-muted">&copy; 2021 efectoscluster.com.ar | Felipe Vallese 3824, Buenos Aires (Argentina)</p>
-        <p>
-          diseñado por <a class="diseñador" href="https://www.linkedin.com/in/emanuelavalente/"><strong>ValenteEmanuel</strong></a>
-        </p>
-      </footer>
-    </div>
+    <footer class="centrado">
+      <ul class="navRedes">
+        <li class="redes-item">
+          <a href="https://www.facebook.com/cluster.efectos" class="redes-link"><i class="fa-brands fa-facebook facebook"></i></a>
+        </li>
+        <li class="redes-item">
+          <a href="https://www.youtube.com/c/EfectosClusterAR" class="redes-link"><i class="fa-brands fa-youtube youtube"></i></a>
+        </li>
+        <li class="redes-item">
+          <a href="https://www.instagram.com/efectoscluster/?hl=es" class="redes-link"><i class="fa-brands fa-instagram instagram"></i></a>
+        </li>
+        <li class="redes-item">
+          <a href="https://twitter.com/EfectosCluster" class="redes-link"><i class="fa-brands fa-twitter twitter"></i></a>
+        </li>
+      </ul>
+      <p>&copy; 2021 efectoscluster.com.ar | Felipe Vallese 3824, Buenos Aires (Argentina)</p>
+      <p>
+        diseñado por <a class="diseñador" href="https://www.linkedin.com/in/emanuelavalente/"><strong>Valente Emanuel</strong></a>
+      </p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

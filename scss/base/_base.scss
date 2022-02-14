@@ -1,0 +1,48 @@
+//ESTE PARTIAL CONTIENE ESTILOS GENERALES.
+body {
+  font-family: $font-general;
+  font-weight: 300;
+  font-size: $fntsize-general;
+  color: $color-texto-general;
+  background-color: $color-fondo-body;
+  main {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Crystal Radio Kit";
+  src: url(../../fonts/ClusterFont.TTF);
+}
+
+// Esta clase me ayuda a evitar el error de colapsado entre margenes.
+.errorColapse {
+  padding-top: 120px;
+}
+
+.centrado {
+  @extend %contenedorCentrado;
+}
+
+.seccionColumna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxTituloSeccion {
+  width: 100%;
+  align-self: flex-start;
+  margin-left: 0px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $color-quinto;
+  .tituloSeccion {
+    @extend %tituloDeSeccion;
+  }
+  p, h2 {
+    font-size: $fntsize-subtituloSeccion;
+    font-weight: 300;
+    color: $color-subtitulo;
+    margin-bottom: 0px;
+  }
+}

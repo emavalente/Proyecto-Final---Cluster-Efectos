@@ -1,0 +1,101 @@
+.boxContacto {
+  width: 100%;
+  .contactoForm {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $fntsize-subtituloSeccion;
+    color: $color-texto-general;
+    .datosUs {
+      width: 100%;
+      max-width: 690px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: solid 1px $color-border-btn;
+        border-radius: 0.4rem;
+        font-family: $font-general;
+        font-size: $fntsize-general;
+        &:focus {
+          outline-color: $color-tercero;
+          background-color: #ffffff;
+        }
+      }
+    }
+    .tipoMsn {
+      margin-bottom: 20px;
+      .label {
+        margin-left: 5px;
+        margin-right: 20px;
+      }
+    }
+    .textMsn {
+      width: 100%;
+      max-width: 690px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      textarea {
+        padding: 10px;
+        border: solid 1px $color-border-btn;
+        border-radius: 0.4rem;
+        resize: none;
+        font-family: $font-general;
+        font-size: $fntsize-general;
+        &:focus {
+          outline-color: $color-tercero;
+          background-color: #ffffff;
+        }
+      }
+    }
+    .boton {
+      .btnEnviar {
+        padding: 10px 50px;
+        background-color: $color-fondo-btn;
+        border: solid 1px $color-border-btn;
+        border-radius: 0.4rem;
+        color: $color-texto-general;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .contenedor-maps {
+    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: $color-sexto;
+    border-radius: 0.4rem;
+    text-align: center;
+    iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+      font-size: $fntsize-general;
+      li {
+        i {
+          display: inline-block;
+          margin: 10px;
+          
+        }
+        p {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+p {
+  margin-bottom: 30px;
+}

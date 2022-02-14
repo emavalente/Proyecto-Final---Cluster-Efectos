@@ -1,0 +1,18 @@
+%tituloDeSeccion {
+    font-family: $font-titulos;
+    font-size: $fntsize-tituloSeccion;
+    font-weight: 500;
+    color: $color-titulo-seccion;
+    margin-bottom: 0px;
+}
+// APLICADO EN EL PARTIAL _bases 
+// CONTROLA EL ESTILO DE LOS H2 DE TODAS LAS SECICONES.
+
+%contenedorCentrado {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 5%;
+  }
+// APLICADO EN EL PARTIAL _bases 
+// CENTRA HORIZONTALMENTE SECCIONES.

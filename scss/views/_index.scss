@@ -1,0 +1,211 @@
+//BOTONES VERMAS CON MIXIN
+.botonVerMas {
+  @include btnVerMas($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);
+}
+
+//HEADER
+.headerIndex {
+  background-image: $fondo-header-mobile;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  .tituloHeader {
+    /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
+    display: inline-block;
+    width: 100%;
+    margin-top: 70vh;
+    text-align: center;
+    h1 {
+      margin-left: -20px;
+      margin-bottom: 0px;
+      color: $color-primero;
+      font-family: $font-logo;
+      font-size: $fntsize-branch;
+      text-shadow: 6px 0px $color-segundo, 12px 0px $color-tercero, 18px 0px $color-cuarto, 24px 0px $color-quinto;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: $fntsize-subbranch;
+      color: #ffff;
+    }
+  }
+}
+
+//NOSOTROS
+
+.boxNosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .textoNosotros {
+    max-width: 500px;
+    margin-bottom: 20px;
+    overflow: auto;
+    p {
+      padding: 0px 30px 0px;
+      margin: 0 auto;
+    }
+  }
+}
+
+//REVIEWS
+.boxVideos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .video {
+    margin: 20px;
+    iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      border-radius: 0.5rem;
+      box-shadow: 10px 10px 10px #000000;
+    }
+  }
+}
+
+//TOP VENTAS
+.galeriaTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  .top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url(../../img/productos/top/fondo_top_500x300.png);
+    background-position: center center;
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+// FORMULARIO SUBSCRIPCION
+.contenedorConFondo {
+  width: 100%;
+  height: 259px;
+  background-image: $fondo-subs;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  .boxFormulario {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .textoSub {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // max-width: 320px;
+      h3 {
+        margin-bottom: 10px;
+        font-family: $font-titulos;
+        font-size: clamp(1rem, 6vw, 1.6rem);
+        font-weight: 500;
+        color: $color-titulo-seccion;
+      }
+      p {
+        font-size: $fntsize-general;
+        color: $color-texto-general;
+        font-family: $font-general;
+        margin-bottom: 20px;
+      }
+    }
+    .formularioSub {
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100px;
+      .inputSub {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+        border: 0px;
+        border-radius: 0.4rem;
+        font-size: $fntsize-general;
+        text-align: center;
+      }
+      .botonSub {
+        background-color: $color-fondo-btn;
+        border: solid 1px $color-border-btn;
+        font-size: $fntsize-general;
+        color: #ffffff;
+        &:active {
+          background-color: $color-hover-btn;
+          transform: scale(0.9);
+          transition: all 150ms;
+        }
+      }
+    }
+  }
+}
+
+//SESIONES
+.contenedorSesiones {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .boxSesion {
+    /* Si borro display flex la imagen no abarca todo el padre. */
+    display: flex;
+    position: relative;
+    width: 90%;
+    max-width: 380px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 0.9rem;
+    box-shadow: 0px 15px 20px #000000;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .cajaTexto {
+      width: 75%;
+      position: absolute;
+      top: 70%;
+      left: 20px;
+      h4 {
+        font-family: $font-titulos;
+        font-size: $fntsize-tituloCard;
+        color: #ff5733;
+        color: #c70039;
+      }
+      p {
+        font-size: $fntsize-subtituloCard;
+        font-family: $font-general;
+        color: $color-texto-general;
+      }
+    }
+    a {
+      .play-mobile {
+        position: absolute;
+        color: $color-texto-general;
+        font-size: clamp(1rem, 8vw, 2rem);
+        left: 85%;
+        top: 80%;
+        transition: all 150ms;
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}

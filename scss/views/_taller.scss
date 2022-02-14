@@ -1,0 +1,16 @@
+.galeriaTaller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .logo-marca {
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+  }
+}

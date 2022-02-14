@@ -1,0 +1,277 @@
+//* RESPONSIVE - MEDIAS QUERIES TABLET - MOBILE-FIRST *//
+
+@media screen and (min-width: 768px) {
+  //BARRA NAVEGACION
+  .navegacion {
+    .header-oferta {
+      display: block;
+      padding: 10px 0px;
+      background-color: $color-sexto;
+      font-size: 11px;
+      font-family: $font-general;
+      color: $color-texto-general;
+      text-align: center;
+      span {
+        padding: 3px;
+        background-color: $color-fondo-notif;
+      }
+      p {
+        font-size: 11px;
+        margin: 0;
+      }
+    }
+    .menu-barra {
+      .menu-logo {
+        left: 47.5%;
+        top: 40px;
+      }
+      .menu-list {
+        top: 93;
+      }
+      #checkbox {
+        &:checked ~ .menu-list {
+          top: 93px;
+        }
+      }
+    }
+  }
+  // VIEWS INDEX - FORMULARIO SUBSCRIPSION //
+  .contenedorConFondo {
+    .boxFormulario {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .textoSub {
+        margin-right: 30px;
+        h3 {
+          width: auto;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  // VIEWS ARTISTAS //
+  .galeriaArtistas {
+    .card-artist {
+      width: 40%;
+    }
+  }
+
+  // VIEWS CONTACTO //
+  .boxContacto {
+    .contactoForm {
+      .datosUs {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// RESPONSIVE - MEDIAS QUERIES DESKTOP CHICO - MOBILE-FIRST
+
+@media screen and (min-width: 1024px) {
+  //NAVEGACION
+  .navegacion {
+    .menu-barra {
+      .menu-logo {
+        left: 48%;
+        top: 35px;
+        .logo {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .menu-list {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        li {
+          .menu-link {
+            padding: 0 10px;
+          }
+        }
+      }
+      #checkbox {
+        &:not(:checked) ~ .menu-list {
+          position: relative;
+          margin-left: 1%;
+          margin-bottom: 0px;
+        }
+        &:not(:checked) ~ .menu-list li {
+          display: inline-block;
+          line-height: 40px;
+          margin: 0 20px;
+        }
+        &:checked ~ .menu-list {
+          position: relative;
+          height: 40px;
+          top: 0;
+          background: none;
+          transition: none;
+          text-align: left;
+          li {
+            display: inline-block;
+            line-height: 40px;
+            margin: 0 20px;
+            transition: none;
+          }
+        }
+      }
+      .menu-btn {
+        display: none;
+      }
+    }
+  }
+
+  // HEADER
+  .headerIndex {
+    background-image: $fondo-header-desktop;
+    position: relative;
+    .tituloHeader {
+      /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
+      display: inline-block;
+      width: max-content;
+      margin-top: 0px;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      text-align: center;
+    }
+  }
+
+  // NOSOTROS
+  .boxNosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    .textoNosotros {
+      width: 60%;
+      max-width: 700px;
+      margin: 0 20px;
+      overflow: auto;
+      p {
+        padding: 0px 30px 0px;
+        font-size: $fntsize-general;
+      }
+    }
+  }
+
+  // REVIEWS
+  .boxVideos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .video {
+      margin: 20px;
+      iframe {
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+
+  // SESIONES
+  .contenedorSesiones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .boxSesion {
+      .capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: rgba(34, 35, 36, 0.8);
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          transition: all 500ms ease-out;
+        }
+      }
+      a {
+        i {
+          margin-top: 150px;
+          color: #ffffff;
+          font-size: 40px;
+        }
+      }
+      &:active {
+        i {
+          transform: scale(0.9);
+          transition: all 150ms;
+        }
+      }
+    }
+  }
+}
+
+// VIEWS PRODUCTOS //
+
+.cardProducto {
+  max-width: 400px;
+  margin: 30px;
+}
+
+// VIEWS TALLER //
+
+.galeriaTaller {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+//* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+
+@media screen and (min-width: 1440px) {
+  // VIEWS INDEX //
+
+  // TOP VENTAS (Index)
+  .galeriaTop {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(../images/productos/top/fondo_top_500x300.png);
+    background-position: center center;
+  }
+
+  // REVIEWS (Index)
+  .boxVideos {
+    .video {
+      iframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+}
+
+
+
+// RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+
+@media screen and (min-width: 1920px) {
+  // FORMULARIO SUBSCRIPSION (Index)
+  .contenedorSub {
+    justify-content: center;
+    .textoSub {
+      h3 {
+        width: 310px;
+      }
+    }
+  }
+}
