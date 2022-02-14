@@ -309,7 +309,7 @@ body {
     transition: all 100ms; }
 
 .headerIndex {
-  background-image: url(../img/banners/banner_movile03.png);
+  background-image: url(./img/banners/banner_movile03.png);
   background-position: center center;
   background-repeat: none;
   background-size: cover;
@@ -379,7 +379,7 @@ body {
 .contenedorConFondo {
   width: 100%;
   height: 259px;
-  background-image: url(../img/banners/banner_002.png);
+  background-image: url(./img/banners/banner_002.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@ footer {
   .navegacion .menu-barra .menu-btn {
     display: none; }
   .headerIndex {
-    background-image: url(../img/banners/banner_001.png);
+    background-image: url(./img/banners/banner_001.png);
     position: relative; }
     .headerIndex .tituloHeader {
       /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
