@@ -2,6 +2,7 @@
 body {
   font-family: "Encode Sans", sans-serif;
   font-weight: 300;
+  font-size: $fntsize-general;
   color: $color-texto-general;
   background-color: $color-fondo-body;
   main {
@@ -20,16 +21,6 @@ body {
   padding-top: 120px;
 }
 
-.flexRow {
-  display: flex;
-  flex-direction: row;
-}
-
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-
 .boxTituloSeccion {
   width: 100%;
   align-self: flex-start;
@@ -40,7 +31,7 @@ body {
     @extend %tituloDeSeccion;
   }
   p {
-    font-size: 1rem;
+    font-size: $fntsize-subtituloSeccion;
     color: $color-subtitulo;
     line-height: 1.5rem;
   }

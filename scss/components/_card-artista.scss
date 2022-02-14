@@ -18,15 +18,11 @@
       h2 {
         margin: 10px 0px;
         font-family: "Fira Sans", sans-serif;
-        font-size: 1.2rem;
+        font-size: $fntsize-tituloCard;
         color: $color-subtitulo;
       }
       p {
         margin-bottom: 20px;
       }
-    }
-    &:hover {
-      transform:scale(105%);
-      transition: all .3s;
     }
   }

@@ -35,41 +35,40 @@
       }
     }
   }
-
-  // VIEWS - INDEX //
-
-  //REVIEWS
-  .boxVideos {
-    iframe {
-      width: 560px;
-      height: 350px;
-    }
-  }
-
-  // FORMULARIO SUBSCRIPSION
+  // VIEWS INDEX - FORMULARIO SUBSCRIPSION //
   .contenedorConFondo {
     .boxFormulario {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
+      .textoSub {
+        margin-right: 30px;
+        h3 {
+          width: auto;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 
-  // VIEWS - ARTISTAS //
-
+  // VIEWS ARTISTAS //
   .galeriaArtistas {
     .card-artist {
       width: 40%;
     }
   }
 
-  // VIEWS - TALLER //
-
+  // VIEWS TALLER //
   .taller {
     display: flex;
     flex-direction: row;
     align-items: center;
     .textoTaller {
+      width: 50%;
       margin: 40px;
       display: flex;
       flex-direction: column;
@@ -135,26 +134,37 @@
 
   // HEADER (Index)
   .headerIndex {
-    background-image: url(../img/banners/banner_001.png);
+    background-image: $fondo-header-desktop;
+    position: relative;
+    .tituloHeader {
+      /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
+      display: inline-block;
+      width: max-content;
+      margin-top: 0px;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      text-align: center;
+    }
   }
 
+  // REVIEWS (Index)
   .boxVideos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-
-  /* FORMULARIO SUBSCRIPCION (Index) */
-  .boxFormulario {
-    width: 760px;
-    .textoSub {
-      h3 {
-        width: 280px;
+    align-items: center;
+    .video {
+      margin: 20px;
+      iframe {
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 16/9;
       }
     }
   }
 
-  /* Sesiones (Index) */
+  // SESIONES (Index)
   .contenedorSesiones {
     width: 100%;
     display: flex;
@@ -193,10 +203,19 @@
   }
 }
 
+// VIEWS PRODUCTOS //
+
+.cardProducto {
+  max-width: 400px;
+  margin: 30px;
+}
+
 //* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
 
 @media screen and (min-width: 1440px) {
-  /* Top Ventas (Index) */
+  // VIEWS INDEX //
+
+  // TOP VENTAS (Index)
   .galeriaTop {
     flex-direction: row;
     justify-content: space-evenly;
@@ -204,18 +223,22 @@
     background-position: center center;
   }
 
-  /* Formulario Suscripcion (Index) */
-  .textoSub {
-    width: 25vw;
-    h3 {
-      width: 290px;
+  // REVIEWS (Index)
+  .boxVideos {
+    .video {
+      iframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
     }
   }
 }
-//* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+
+// RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
 
 @media screen and (min-width: 1920px) {
-  /* Formulario Suscripcion (Index) */
+  // FORMULARIO SUBSCRIPSION (Index)
   .contenedorSub {
     justify-content: center;
     .textoSub {

@@ -1,8 +1,8 @@
 .cardProducto {
-  width: 80%;
+  width: 100%;
   max-width: 500px;
   height: auto;
-  margin: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +11,7 @@
   border-radius: 0.9rem;
   overflow: hidden;
   .contenedor-producto {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,29 +27,46 @@
       width: 60%;
       height: 300px;
       text-align: left;
-      padding: 20px;
+      padding: 20px 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       h3 {
         margin: 10px 0px;
         font-family: "Fira Sans", sans-serif;
-        font-size: 1.5rem;
+        font-size: $fntsize-tituloCard;
         color: #c70039;
       }
-      p {
+      div {
         margin-bottom: 20px;
-        font-size: 0.7rem;
-        margin-bottom: 30px;
+        h4 {
+          margin-bottom: 10px;
+          font-size: $fntsize-textoCard;
+        }
+        div {
+          height: 100px;
+          margin-right: 20px;
+          overflow: auto;
+          margin-bottom: 10px;
+          p {
+            padding-right: 15px;
+            font-size: $fntsize-textoCard;
+          }
+        }
+        a {
+          color: $color-texto-general;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          font-size: $fntsize-textoCard;
+        }
       }
       button {
-        width: 60%;
-        padding: 5px;
+        width: 80%;
+        padding: 5px 10px;
         background-color: $color-fondo-btn;
         border: solid 1px $color-border-btn;
         border-radius: 0.4rem;
         font-family: $font-general;
-        font-size: 0.8rem;
         font-weight: 300;
         color: $color-texto-general;
         &:hover {
@@ -59,19 +77,15 @@
           transition: all 100ms;
         }
       }
-      a {
-        font-size: 0.7rem;
-        color: $color-texto-general;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-      }
     }
   }
   .contenedor-clasificacion {
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: right;
     a {
       display: inline-block;
-      font-size: 0.8rem;
+      font-size: $fntsize-textoCard;
       color: $color-texto-general;
       margin-right: 10px;
       .fa-star {
