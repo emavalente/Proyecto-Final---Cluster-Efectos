@@ -1,3 +1,4 @@
+//ESTE PARTIAL CONTIENE EL COMPONENTE CARD-PRODUCTO
 .cardProducto {
   width: 100%;
   max-width: 500px;
@@ -33,9 +34,9 @@
       justify-content: space-between;
       h3 {
         margin: 10px 0px;
-        font-family: "Fira Sans", sans-serif;
+        font-family: $font-titulos;
         font-size: $fntsize-tituloCard;
-        color: #c70039;
+        color: $color-subtitulo;
       }
       div {
         margin-bottom: 20px;

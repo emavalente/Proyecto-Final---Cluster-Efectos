@@ -1,19 +1,9 @@
-// APLICACION DE SEO.
+Se incorporo para el SEO lo siguiente:
 
-1.- Se aplicaron etiquetas meta correspondientes a: KEYWORDS y DESCIPTION. 
-
-2.- Se aplica etiqueta title en concepto al contenido.
-
-3.- Se aplica h1 en concepto al contenido: 
-    - nombre de marca dentro del index.html
-    - productos.html (FALTA)
-    - artistas.html (FALTA)
-    - taller.html (FALTA)
-    - contacto.html (FALTA)
-
-4.- Se aplican textos alternativos a imagenes. (FALTA)
-
-5.- Se aplica mapa de sitio. (FALTA)
-
-6.- 
-
+- Etiqueta meta KEYWORDS.
+- Etiqueta meta DESCIPTION.
+- Etiqueta <title> con titulo descriptivo a cada pagina.
+- Gerarquia de encabezados.
+- Etiquetas <img> textos alternativos en cada imagen.
+- Gerarquia de archivos.
+- 

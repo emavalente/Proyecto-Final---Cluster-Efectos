@@ -35,13 +35,18 @@
 //NOSOTROS
 
 .boxNosotros {
-  overflow: auto;
-  margin-bottom: 50px;
-  p {
-    max-width: 90%;
-    padding: 0px 30px 0px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .textoNosotros {
+    max-width: 500px;
+    margin-bottom: 20px;
+    overflow: auto;
+    p {
+      padding: 0px 30px 0px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -75,7 +80,7 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 30px;
-    background-image: url(../img/productos/top/fondo_top_500x300.png);
+    background-image: url(../../img/productos/top/fondo_top_500x300.png);
     background-position: center center;
     img {
       width: 100%;
@@ -137,12 +142,12 @@
         text-align: center;
       }
       .botonSub {
-        background-color: #121617;
-        border: solid 1px #c70039;
+        background-color: $color-fondo-btn;
+        border: solid 1px $color-border-btn;
         font-size: $fntsize-general;
         color: #ffffff;
         &:active {
-          background-color: #0c0d0f;
+          background-color: $color-hover-btn;
           transform: scale(0.9);
           transition: all 150ms;
         }
@@ -178,7 +183,7 @@
       top: 70%;
       left: 20px;
       h4 {
-        font-family: "Fira Sans", sans-serif;
+        font-family: $font-titulos;
         font-size: $fntsize-tituloCard;
         color: #ff5733;
         color: #c70039;

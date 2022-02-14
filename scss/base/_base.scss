@@ -1,6 +1,6 @@
 //ESTE PARTIAL CONTIENE ESTILOS GENERALES.
 body {
-  font-family: "Encode Sans", sans-serif;
+  font-family: $font-general;
   font-weight: 300;
   font-size: $fntsize-general;
   color: $color-texto-general;
@@ -8,6 +8,16 @@ body {
   main {
     width: 100%;
   }
+}
+
+@font-face {
+  font-family: "Crystal Radio Kit";
+  src: url(../../fonts/ClusterFont.TTF);
+}
+
+// Esta clase me ayuda a evitar el error de colapsado entre margenes.
+.errorColapse {
+  padding-top: 120px;
 }
 
 .centrado {
@@ -18,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
 }
 
 .boxTituloSeccion {
@@ -30,9 +39,10 @@ body {
   .tituloSeccion {
     @extend %tituloDeSeccion;
   }
-  p {
+  p, h2 {
     font-size: $fntsize-subtituloSeccion;
+    font-weight: 300;
     color: $color-subtitulo;
-    line-height: 1.5rem;
+    margin-bottom: 0px;
   }
 }

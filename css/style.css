@@ -3,14 +3,14 @@
   font-family: "Fira Sans", sans-serif;
   font-size: clamp(1rem, 6vw, 2rem);
   font-weight: 500;
-  color: #ff5733; }
+  color: #ff5733;
+  margin-bottom: 0px; }
 
 .centrado {
   width: 90%;
   margin: 0 auto;
-  padding-top: 5%;
   overflow: hidden;
-  margin-bottom: 50px; }
+  padding-top: 5%; }
 
 .efectos {
   color: #ff5733; }
@@ -53,11 +53,17 @@ body {
   body main {
     width: 100%; }
 
+@font-face {
+  font-family: "Crystal Radio Kit";
+  src: url(../../fonts/ClusterFont.TTF); }
+
+.errorColapse {
+  padding-top: 120px; }
+
 .seccionColumna {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 120px; }
+  align-items: center; }
 
 .boxTituloSeccion {
   width: 100%;
@@ -65,10 +71,11 @@ body {
   margin-left: 0px;
   margin-bottom: 40px;
   border-bottom: 1px solid #581845; }
-  .boxTituloSeccion p {
+  .boxTituloSeccion p, .boxTituloSeccion h2 {
     font-size: clamp(0.7rem, 4vw, 1rem);
+    font-weight: 300;
     color: #c70039;
-    line-height: 1.5rem; }
+    margin-bottom: 0px; }
 
 /* ESTILOS NAVEGADOR */
 .navegacion {
@@ -88,13 +95,14 @@ body {
     /* -- Logo -- */ }
     .navegacion .menu-barra .menu-logo {
       position: absolute;
-      left: 46.5%;
+      left: 45.5%;
       top: 10px; }
       .navegacion .menu-barra .menu-logo .logo {
         width: 40px;
         height: 40px;
         border-radius: 50%; }
     .navegacion .menu-barra .menu-list {
+      padding-left: 0px;
       list-style: none;
       border-bottom-right-radius: 40%;
       border-bottom-left-radius: 40%; }
@@ -107,7 +115,7 @@ body {
         .navegacion .menu-barra .menu-list li .menu-link:hover, .navegacion .menu-barra .menu-list li .menu-link:active {
           color: #ffffff;
           outline: solid 1px #ff5733;
-          background-color: #581845; }
+          background-color: #000000; }
     .navegacion .menu-barra #checkbox {
       display: none; }
       .navegacion .menu-barra #checkbox:not(:checked) ~ .menu-list {
@@ -120,7 +128,7 @@ body {
         top: 60px;
         width: 100%;
         height: 40vh;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: #000000;
         overflow: hidden;
         list-style: none;
         text-align: center;
@@ -236,8 +244,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
   .card-artist .artist-hero {
     width: 100%; }
   .card-artist .artist-text {
@@ -248,6 +255,39 @@ body {
       font-size: clamp(0.8rem, 5vw, 1.3rem);
       color: #c70039; }
     .card-artist .artist-text p {
+      margin-bottom: 20px; }
+
+.card-taller {
+  margin: 30px;
+  width: 90%;
+  max-width: 400px;
+  background-color: #000000;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 10px #000000; }
+  .card-taller .taller-hero {
+    width: 100%; }
+    .card-taller .taller-hero iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16/9; }
+    .card-taller .taller-hero img {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16/9; }
+  .card-taller .taller-text {
+    width: 100%;
+    padding: 0 20px; }
+    .card-taller .taller-text h3 {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-family: "Fira Sans", sans-serif;
+      font-size: clamp(0.8rem, 5vw, 1.3rem);
+      color: #c70039; }
+    .card-taller .taller-text p {
       margin-bottom: 20px; }
 
 .botonVerMas {
@@ -269,7 +309,7 @@ body {
     transition: all 100ms; }
 
 .headerIndex {
-  background-image: url(../img/banners/banner_movile03.png);
+  background-image: url(../../img/banners/banner_movile03.png);
   background-position: center center;
   background-repeat: none;
   background-size: cover;
@@ -284,7 +324,7 @@ body {
       margin-left: -20px;
       margin-bottom: 0px;
       color: #fed501;
-      font-family: Crystal Radio Kit;
+      font-family: "Crystal Radio Kit";
       font-size: clamp(2rem, 20vw, 9rem);
       text-shadow: 6px 0px #ff5733, 12px 0px #c70039, 18px 0px #900c3f, 24px 0px #581845; }
     .headerIndex .tituloHeader h2 {
@@ -293,13 +333,17 @@ body {
       color: #ffff; }
 
 .boxNosotros {
-  overflow: auto;
-  margin-bottom: 50px; }
-  .boxNosotros p {
-    max-width: 90%;
-    padding: 0px 30px 0px;
-    margin-left: auto;
-    margin-right: auto; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .boxNosotros .textoNosotros {
+    max-width: 500px;
+    margin-bottom: 20px;
+    overflow: auto; }
+    .boxNosotros .textoNosotros p {
+      padding: 0px 30px 0px;
+      margin: 0 auto; }
 
 .boxVideos {
   width: 100%;
@@ -326,7 +370,7 @@ body {
     justify-content: center;
     width: 100%;
     margin-bottom: 30px;
-    background-image: url(../img/productos/top/fondo_top_500x300.png);
+    background-image: url(../../img/productos/top/fondo_top_500x300.png);
     background-position: center center; }
     .galeriaTop .top img {
       width: 100%;
@@ -335,7 +379,7 @@ body {
 .contenedorConFondo {
   width: 100%;
   height: 259px;
-  background-image: url(../img/banners/banner_002.png);
+  background-image: url(../../img/banners/banner_002.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -379,7 +423,7 @@ body {
         font-size: clamp(0.6rem, 4vw, 1rem);
         text-align: center; }
       .contenedorConFondo .boxFormulario .formularioSub .botonSub {
-        background-color: #121617;
+        background-color: #141518;
         border: solid 1px #c70039;
         font-size: clamp(0.6rem, 4vw, 1rem);
         color: #ffffff; }
@@ -437,39 +481,22 @@ body {
   flex-wrap: wrap;
   justify-content: center; }
 
-ul {
+.centrado ul {
   width: fit-content;
   margin: 0 auto;
   list-style: circle;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-bottom: 50px; }
 
 .galeriaArtistas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
 
-.taller {
+.galeriaTaller {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .taller iframe {
-    width: 100%;
-    max-width: 500px;
-    height: 215px;
-    margin: 20px 0; }
-  .taller .textoTaller {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%; }
-    .taller .textoTaller h1 {
-      color: #c70039;
-      font-family: "Fira Sans", sans-serif; }
-    .taller .textoTaller h2 {
-      font-weight: 300;
-      font-size: 0.9rem;
-      color: #900c3f; }
 
 .contenedor-marcas {
   display: flex;
@@ -480,63 +507,95 @@ ul {
     height: 50px;
     margin: 20px; }
 
-.contactoForm {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: clamp(0.7rem, 4vw, 1rem);
-  color: #ffffff; }
-  .contactoForm .datosUs {
+.boxContacto {
+  width: 100%; }
+  .boxContacto .contactoForm {
     width: 100%;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .contactoForm .datosUs input {
+    align-items: center;
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    color: #ffffff; }
+    .boxContacto .contactoForm .datosUs {
       width: 100%;
-      max-width: 300px;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: solid 1px #c70039;
-      border-radius: 0.4rem; }
-      .contactoForm .datosUs input:focus {
-        outline-color: #c70039;
-        background-color: #ffffff; }
-  .contactoForm .tipoMsn {
-    margin-bottom: 20px; }
-    .contactoForm .tipoMsn .label {
-      margin-left: 5px;
-      margin-right: 20px; }
-  .contactoForm .textMsn {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column; }
-    .contactoForm .textMsn textarea {
-      padding: 10px;
+      max-width: 690px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .boxContacto .contactoForm .datosUs input {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: solid 1px #c70039;
+        border-radius: 0.4rem;
+        font-family: "Encode Sans", sans-serif;
+        font-size: clamp(0.6rem, 4vw, 1rem); }
+        .boxContacto .contactoForm .datosUs input:focus {
+          outline-color: #c70039;
+          background-color: #ffffff; }
+    .boxContacto .contactoForm .tipoMsn {
+      margin-bottom: 20px; }
+      .boxContacto .contactoForm .tipoMsn .label {
+        margin-left: 5px;
+        margin-right: 20px; }
+    .boxContacto .contactoForm .textMsn {
+      width: 100%;
+      max-width: 690px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column; }
+      .boxContacto .contactoForm .textMsn textarea {
+        padding: 10px;
+        border: solid 1px #c70039;
+        border-radius: 0.4rem;
+        resize: none;
+        font-family: "Encode Sans", sans-serif;
+        font-size: clamp(0.6rem, 4vw, 1rem); }
+        .boxContacto .contactoForm .textMsn textarea:focus {
+          outline-color: #c70039;
+          background-color: #ffffff; }
+    .boxContacto .contactoForm .boton .btnEnviar {
+      padding: 10px 50px;
+      background-color: #141518;
       border: solid 1px #c70039;
       border-radius: 0.4rem;
-      resize: none; }
-      .contactoForm .textMsn textarea:focus {
-        outline-color: #c70039;
-        background-color: #ffffff; }
-  .contactoForm .boton .btnEnviar {
-    padding: 10px 50px;
-    background-color: #141518;
-    border: solid 1px #c70039;
+      color: #ffffff;
+      text-transform: uppercase; }
+  .boxContacto .contenedor-maps {
+    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #000000;
     border-radius: 0.4rem;
-    color: #ffffff;
-    text-transform: uppercase; }
+    text-align: center; }
+    .boxContacto .contenedor-maps iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16/9; }
+    .boxContacto .contenedor-maps ul {
+      list-style: none;
+      text-align: left;
+      font-size: clamp(0.6rem, 4vw, 1rem); }
+      .boxContacto .contenedor-maps ul li i {
+        display: inline-block;
+        margin: 10px; }
+      .boxContacto .contenedor-maps ul li p {
+        display: inline; }
+
+p {
+  margin-bottom: 30px; }
 
 /* Estilos Footer */
 footer {
-  border-top: 1px solid #581845;
-  padding: 60px; }
+  border-top: 1px solid #581845; }
   footer .navRedes {
     display: flex;
     justify-content: center;
-    list-style: none; }
+    list-style: none;
+    padding-left: 0px; }
     footer .navRedes .redes-item {
       margin: 10px;
       padding: 5px; }
@@ -551,7 +610,7 @@ footer {
     margin-right: auto;
     margin-bottom: 20px;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 3vw, 0.9rem);
     text-align: center; }
     footer p .diseñador {
       font-family: "Parisienne", cursive;
@@ -594,16 +653,10 @@ footer {
         margin-bottom: 0px; }
   .galeriaArtistas .card-artist {
     width: 40%; }
-  .taller {
-    display: flex;
+  .boxContacto .contactoForm .datosUs {
     flex-direction: row;
-    align-items: center; }
-    .taller .textoTaller {
-      width: 50%;
-      margin: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; } }
+    justify-content: space-between;
+    margin-bottom: 20px; } }
 
 @media screen and (min-width: 1024px) {
   .navegacion .menu-barra .menu-logo {
@@ -640,7 +693,7 @@ footer {
   .navegacion .menu-barra .menu-btn {
     display: none; }
   .headerIndex {
-    background-image: url(../img/banners/banner_001.png);
+    background-image: url(../../img/banners/banner_001.png);
     position: relative; }
     .headerIndex .tituloHeader {
       /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
@@ -651,6 +704,21 @@ footer {
       top: 50%;
       left: 20%;
       text-align: center; }
+  .boxNosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center; }
+    .boxNosotros .textoNosotros {
+      width: 60%;
+      max-width: 700px;
+      margin: 0 20px;
+      overflow: auto; }
+      .boxNosotros .textoNosotros p {
+        padding: 0px 30px 0px;
+        font-size: clamp(0.6rem, 4vw, 1rem); }
   .boxVideos {
     flex-direction: row;
     flex-wrap: wrap;
@@ -691,6 +759,11 @@ footer {
 .cardProducto {
   max-width: 400px;
   margin: 30px; }
+
+.galeriaTaller {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 @media screen and (min-width: 1440px) {
   .galeriaTop {

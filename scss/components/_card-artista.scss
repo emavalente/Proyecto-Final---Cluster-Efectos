@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     .artist-hero {
       width: 100%;
     }
@@ -17,7 +16,7 @@
       width: 95%;
       h2 {
         margin: 10px 0px;
-        font-family: "Fira Sans", sans-serif;
+        font-family: $font-titulos;
         font-size: $fntsize-tituloCard;
         color: $color-subtitulo;
       }

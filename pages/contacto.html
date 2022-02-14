@@ -15,9 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;500;700&family=Fira+Sans:wght@300;400;500;700;900&family=Parisienne&display=swap" rel="stylesheet" />
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animacion Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Insersion CSS -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Cluster | Pedales Analogicos para Guitarra y Bajo</title>
+    <title>Contacto | Cluster - Pedales Analogicos para Guitarra y Bajo</title>
   </head>
   <body>
     <!-- NavBar -->
@@ -47,39 +49,60 @@
       </nav>
     </div>
     <main>
-      <section class="centrado seccionColumna">
+      <section class="centrado seccionColumna errorColapse">
         <div class="boxTituloSeccion">
-          <h2 class="tituloSeccion">Contacto</h2>
-          <p>Escribinos todas tus dudas, nosotros te leemos.</p>
+          <h1 class="tituloSeccion">Contacto</h1>
+          <h2>Escribinos todas tus dudas, nosotros te leemos.</h2>
         </div>
-        <form action="" class="contactoForm">
-          <div class="datosUs">
-            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" />
-            <input type="text" name="apellido" id="apellido" class="input" placeholder="Apellido" />
+        <div class="boxContacto" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
+          <form action="#" method="post" class="contactoForm">
+            <div class="datosUs">
+              <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" />
+              <input type="text" name="apellido" id="apellido" class="input" placeholder="Apellido" />
+            </div>
+            <div class="datosUs">
+              <input type="email" name="email" id="email" class="input" placeholder="@email" />
+              <input type="tel" name="telefono" id="telefono" class="input" placeholder="Teléfono" />
+            </div>
+            <div class="tipoMsn">
+              <input type="radio" name="tipo" id="presupuesto" class="radio" />
+              <label for="presupuesto" class="label">Presupuesto</label>
+              <input type="radio" name="tipo" id="garantia" class="radio" />
+              <label for="garantia" class="label">Garantía</label>
+              <input type="radio" name="tipo" id="otros" class="radio" />
+              <label for="otros" class="label">Otros</label>
+            </div>
+            <div class="textMsn">
+              <textarea name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Ingrese su Mensaje"></textarea>
+            </div>
+            <div class="boton">
+              <input class="btnEnviar" type="submit" name="submit" id="submit" value="Enviar" />
+            </div>
+          </form>
+          <div class="contenedor-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13132.521734959466!2d-58.484126!3d-34.626144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8143653e3722ffbd!2sCluster!5e0!3m2!1ses-419!2sar!4v1644865744869!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+            <ul>
+              <li><i class="fa-solid fa-envelope-open-text"></i><p>Felipe Vallese 3824, C1407 CABA</p></li>
+              <li><i class="fa-solid fa-phone"></i><p>+541157472899</p></li>
+              <li><i class="fa-solid fa-location-dot"></i>pcontacto@efectoscluster.com.ar</li>
+            </ul>
           </div>
-          <div class="datosUs">
-            <input type="email" name="email" id="email" class="input" placeholder="@email" />
-            <input type="tel" name="telefono" id="telefono" class="input" placeholder="Teléfono" />
-          </div>
-          <div class="tipoMsn">
-            <input type="radio" name="tipo" id="presupuesto" class="radio" />
-            <label for="presupuesto" class="label">Presupuesto</label>
-            <input type="radio" name="tipo" id="garantia" class="radio" />
-            <label for="garantia" class="label">Garantía</label>
-            <input type="radio" name="tipo" id="otros" class="radio" />
-            <label for="otros" class="label">Otros</label>
-          </div>
-          <div class="textMsn">
-            <textarea name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Ingrese su Mensaje"></textarea>
-          </div>
-          <div class="boton">
-            <input class="btnEnviar" type="submit" name="submit" id="submit" value="Enviar" />
-          </div>
-        </form>
+        </div>
         <p>Todos los e-mails son respondidos dentro de 5 días hábiles. Si pasado ese lapso no recibiste nuestra respuesta, por favor, contactanos nuevamente.</p>
       </section>
     </main>
-    <footer class="contenedorCentrado">
+    <footer class="centrado">
       <ul class="navRedes">
         <li class="redes-item">
           <a href="https://www.facebook.com/cluster.efectos" class="redes-link"><i class="fa-brands fa-facebook facebook"></i></a>
@@ -99,5 +122,10 @@
         diseñado por <a class="diseñador" href="https://www.linkedin.com/in/emanuelavalente/"><strong>Valente Emanuel</strong></a>
       </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
