@@ -47,27 +47,51 @@
       </nav>
     </div>
     <main>
+      <section class="centrado seccionColumna">
         <div class="boxTituloSeccion">
           <h2 class="tituloSeccion">Contacto</h2>
           <p>Escribinos todas tus dudas, nosotros te leemos.</p>
         </div>
-        <section class="centrado">
-            ACA VA EL FORMULARIO!!!!
-        </section>
+        <form action="" class="contactoForm">
+          <div class="datosUs">
+            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" />
+            <input type="text" name="apellido" id="apellido" class="input" placeholder="Apellido" />
+          </div>
+          <div class="datosUs">
+            <input type="email" name="email" id="email" class="input" placeholder="@email" />
+            <input type="tel" name="telefono" id="telefono" class="input" placeholder="Teléfono" />
+          </div>
+          <div class="tipoMsn">
+            <input type="radio" name="tipo" id="presupuesto" class="radio" />
+            <label for="presupuesto" class="label">Presupuesto</label>
+            <input type="radio" name="tipo" id="garantia" class="radio" />
+            <label for="garantia" class="label">Garantía</label>
+            <input type="radio" name="tipo" id="otros" class="radio" />
+            <label for="otros" class="label">Otros</label>
+          </div>
+          <div class="textMsn">
+            <textarea name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Ingrese su Mensaje"></textarea>
+          </div>
+          <div class="boton">
+            <input class="btnEnviar" type="submit" name="submit" id="submit" value="Enviar" />
+          </div>
+        </form>
+        <p>Todos los e-mails son respondidos dentro de 5 días hábiles. Si pasado ese lapso no recibiste nuestra respuesta, por favor, contactanos nuevamente.</p>
+      </section>
     </main>
     <footer class="contenedorCentrado">
       <ul class="navRedes">
         <li class="redes-item">
-          <a href="https://www.facebook.com/cluster.efectos" class="redes-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/cluster.efectos" class="redes-link"><i class="fa-brands fa-facebook facebook"></i></a>
         </li>
         <li class="redes-item">
-          <a href="https://www.youtube.com/c/EfectosClusterAR" class="redes-link"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/c/EfectosClusterAR" class="redes-link"><i class="fa-brands fa-youtube youtube"></i></a>
         </li>
         <li class="redes-item">
-          <a href="https://www.instagram.com/efectoscluster/?hl=es" class="redes-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/efectoscluster/?hl=es" class="redes-link"><i class="fa-brands fa-instagram instagram"></i></a>
         </li>
         <li class="redes-item">
-          <a href="https://twitter.com/EfectosCluster" class="redes-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://twitter.com/EfectosCluster" class="redes-link"><i class="fa-brands fa-twitter twitter"></i></a>
         </li>
       </ul>
       <p>&copy; 2021 efectoscluster.com.ar | Felipe Vallese 3824, Buenos Aires (Argentina)</p>
