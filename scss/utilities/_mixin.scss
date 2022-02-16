@@ -1,9 +1,10 @@
-@mixin btnVerMas($bgcolor, $bghover, $bdrcolor, $txtcolor, $pad) {
+@mixin botones($bgcolor, $bghover, $bdrcolor, $txtcolor, $pad) {
   max-width: 300px;
   margin: 50px 0;
   padding: $pad;
   background-color: $bgcolor;
-  border: solid 1px $bdrcolor;
+  box-shadow: 0px 10px 10px #000000;
+  border: solid 2px $bdrcolor;
   border-radius: 0.4rem;
   font-family: $font-general;
   font-size: 0.8rem;
@@ -12,10 +13,12 @@
   text-align: center;
   &:hover {
     background-color: $bghover;
+    color: $txtcolor;
   }
   &:active {
     transform: scale(0.9);
     transition: all 100ms;
+    box-shadow: 0px 0px 30px 10px #000000;
   }
 }
 

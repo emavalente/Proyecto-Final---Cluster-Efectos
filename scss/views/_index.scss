@@ -1,6 +1,6 @@
 //BOTONES VERMAS CON MIXIN
 .botonVerMas {
-  @include btnVerMas($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);
+  @include botones($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);
 }
 
 //HEADER
@@ -40,9 +40,18 @@
   flex-direction: column;
   align-items: center;
   .textoNosotros {
+    width: 100%;
     max-width: 500px;
-    margin-bottom: 20px;
+    max-height: 600px;
+    margin-bottom: 30px;
     overflow: auto;
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-cuarto;
+      border-radius: 4px;
+    }
     p {
       padding: 0px 30px 0px;
       margin: 0 auto;
@@ -142,15 +151,8 @@
         text-align: center;
       }
       .botonSub {
-        background-color: $color-fondo-btn;
-        border: solid 1px $color-border-btn;
-        font-size: $fntsize-general;
-        color: #ffffff;
-        &:active {
-          background-color: $color-hover-btn;
-          transform: scale(0.9);
-          transition: all 150ms;
-        }
+        @include botones($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);       
+        margin: 0;
       }
     }
   }

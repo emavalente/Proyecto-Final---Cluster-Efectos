@@ -49,6 +49,13 @@
           margin-right: 20px;
           overflow: auto;
           margin-bottom: 10px;
+          &::-webkit-scrollbar {
+            width: 7px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: $color-cuarto;
+            border-radius: 4px;
+          }
           p {
             padding-right: 15px;
             font-size: $fntsize-textoCard;
@@ -62,21 +69,26 @@
         }
       }
       button {
-        width: 80%;
-        padding: 5px 10px;
-        background-color: $color-fondo-btn;
-        border: solid 1px $color-border-btn;
-        border-radius: 0.4rem;
-        font-family: $font-general;
-        font-weight: 300;
-        color: $color-texto-general;
-        &:hover {
-          cursor: pointer;
-        }
-        &:active {
-          transform: scale(0.9);
-          transition: all 100ms;
-        }
+        @include botones($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 16px);
+        margin: 0;
+        max-width: 100px;
+        
+        
+        // width: 80%;
+        //padding: 5px 10px;
+        // background-color: $color-fondo-btn;
+        // border: solid 1px $color-border-btn;
+        // border-radius: 0.4rem;
+        // font-family: $font-general;
+        // font-weight: 300;
+        // color: $color-texto-general;
+        // &:hover {
+        //   cursor: pointer;
+        // }
+        // &:active {
+        //   transform: scale(0.9);
+        //   transition: all 100ms;
+        // }
       }
     }
   }
