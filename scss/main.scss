@@ -7,10 +7,8 @@
 @import './base/reset';
 @import './base/base';
 
-//IMPORTACION DE LAYOUTS COMPARTIDOS
-@import './layout/navegacion';
-
 //IMPORTACION DE COMPONENTS
+@import './components/navegacion';
 @import './components/card-producto';
 @import './components/card-artista';
 @import './components/card-taller';

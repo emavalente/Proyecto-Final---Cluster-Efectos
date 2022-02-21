@@ -1,4 +1,4 @@
-//* RESPONSIVE - MEDIAS QUERIES TABLET - MOBILE-FIRST *//
+// RESPONSIVE - MEDIAS QUERIES TABLET - MOBILE-FIRST //
 
 @media screen and (min-width: 768px) {
   //BARRA NAVEGACION
@@ -31,7 +31,6 @@
       }
     }
   }
-  
 
   // VIEWS INDEX - FORMULARIO SUBSCRIPSION //
   .contenedorConFondo {
@@ -53,13 +52,6 @@
     }
   }
 
-  // VIEWS ARTISTAS //
-  .galeriaArtistas {
-    .card-artist {
-      width: 40%;
-    }
-  }
-
   // VIEWS CONTACTO //
   .boxContacto {
     .contactoForm {
@@ -76,6 +68,17 @@
       }
     }
   }
+
+  // VIEWS ARTISTAS //
+
+  .galeriaArtistas {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 250px));
+    
+  }
+    
+
+  
 }
 
 // RESPONSIVE - MEDIAS QUERIES DESKTOP CHICO - MOBILE-FIRST
@@ -95,35 +98,52 @@
       .menu-list {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        li {
-          .menu-link {
-            padding: 0 10px;
-          }
-        }
       }
       #checkbox {
         &:not(:checked) ~ .menu-list {
           position: relative;
           margin-left: 1%;
           margin-bottom: 0px;
+          display: flex;
+          align-items: center;
         }
         &:not(:checked) ~ .menu-list li {
           display: inline-block;
-          line-height: 40px;
+          line-height: 30px;
           margin: 0 20px;
+          .menu-link {
+            padding: 0;
+            border: solid 1px transparent;
+            &:hover,
+            &:active {
+              border-bottom: solid 1px $color-outline-link;
+            }
+          }
         }
         &:checked ~ .menu-list {
           position: relative;
-          height: 40px;
           top: 0;
+          display: flex;
+          align-items: center;
+          height: 60px;
+          margin-left: 10px;
+          margin-bottom: 0;
           background: none;
           transition: none;
           text-align: left;
           li {
             display: inline-block;
-            line-height: 40px;
+            line-height: 30px;
             margin: 0 20px;
             transition: none;
+            .menu-link {
+              padding: 0;
+              border: solid 1px transparent;
+              &:hover,
+              &:active {
+                border-bottom: solid 1px $color-outline-link;
+              }
+            }
           }
         }
       }
@@ -133,8 +153,7 @@
     }
   }
 
-  // VIEWS INDEX //
-  // HEADER
+  // VIEWS INDEX - HEADER //
   .headerIndex {
     background-image: $fondo-header-desktop;
     position: relative;
@@ -213,7 +232,7 @@
       }
     }
   }
-  
+
   // VIEWS PRODUCTOS //
 
   .cardProducto {
@@ -231,7 +250,7 @@
   }
 }
 
-//* RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+// RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
 
 @media screen and (min-width: 1440px) {
   // VIEWS INDEX //
