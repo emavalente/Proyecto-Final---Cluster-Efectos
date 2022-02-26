@@ -1,8 +1,0 @@
-Se incorporo para el SEO lo siguiente:
-
-- Etiqueta meta KEYWORDS.
-- Etiqueta meta DESCIPTION.
-- Etiqueta <title> con titulo descriptivo en cada pagina.
-- Gerarquia de encabezados.
-- Etiquetas <img> con textos alternativos para cada imagen.
-- Gerarquia de archivos.
