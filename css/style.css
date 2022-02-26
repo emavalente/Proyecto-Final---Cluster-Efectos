@@ -50,12 +50,10 @@ body {
     color: #c70039;
     margin-bottom: 0px; }
 
-/* ESTILOS NAVEGADOR */
 .navegacion {
   position: fixed;
   width: 100%;
-  z-index: 10;
-  /* BARRA NOTIFICACION */ }
+  z-index: 10; }
   .navegacion .header-oferta {
     display: none; }
   .navegacion .menu-barra {
@@ -64,8 +62,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
-    /* -- Logo -- */ }
+    background-color: #000000; }
     .navegacion .menu-barra .menu-logo {
       position: absolute;
       left: 50%;
@@ -758,8 +755,6 @@ footer {
     background-image: url("../img/banners/banner_001.png");
     position: relative; }
     .headerIndex .tituloHeader {
-      /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
-      display: inline-block;
       width: max-content;
       margin-top: 0px;
       position: absolute;

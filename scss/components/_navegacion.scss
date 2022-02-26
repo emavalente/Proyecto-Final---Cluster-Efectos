@@ -1,10 +1,9 @@
-/* ESTILOS NAVEGADOR */
 //ESTE PARTIAL CONTIENE EL COMPONENTE BARRA DE NAVEGACION
 .navegacion {
   position: fixed;
   width: 100%;
   z-index: 10;
-  /* BARRA NOTIFICACION */
+  // BARRA NOTIFICACION
   .header-oferta {
     display: none;
   }
@@ -15,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: $color-sexto;
-    /* -- Logo -- */
+    // LOGO 
     .menu-logo {
       position: absolute;
       left: 50%;

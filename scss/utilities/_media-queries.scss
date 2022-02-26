@@ -1,4 +1,4 @@
-// RESPONSIVE - MEDIAS QUERIES TABLET - MOBILE-FIRST //
+// RESPONSIVE - MEDIA QUERIES TABLET - MOBILE-FIRST //
 
 @media screen and (min-width: 768px) {
   //BARRA NAVEGACION
@@ -81,7 +81,7 @@
   
 }
 
-// RESPONSIVE - MEDIAS QUERIES DESKTOP CHICO - MOBILE-FIRST
+// RESPONSIVE - MEDIA QUERIES DESKTOP CHICO - MOBILE-FIRST
 
 @media screen and (min-width: 1024px) {
   //NAVEGACION
@@ -158,8 +158,6 @@
     background-image: $fondo-header-desktop;
     position: relative;
     .tituloHeader {
-      /* inline-block esta evitando que al dar margin-top me mueva tambien el padre (falla de CSS colapsado de margenes)*/
-      display: inline-block;
       width: max-content;
       margin-top: 0px;
       position: absolute;
@@ -250,7 +248,7 @@
   }
 }
 
-// RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+// RESPONSIVE - MEDIA QUERIES DESKTOP GRANDE - MOBILE-FIRST
 
 @media screen and (min-width: 1440px) {
   // VIEWS INDEX //
@@ -275,7 +273,7 @@
   }
 }
 
-// RESPONSIVE - MEDIAS QUERIES DESKTOP GRANDE - MOBILE-FIRST
+// RESPONSIVE - MEDIA QUERIES DESKTOP GRANDE - MOBILE-FIRST
 
 @media screen and (min-width: 1920px) {
   // FORMULARIO SUBSCRIPSION (Index)
