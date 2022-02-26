@@ -4,8 +4,8 @@
 @import './utilities/mixin';
 
 //RESET Y GENERALES
-@import './base/reset';
-@import './base/base';
+@import './bases/reset';
+@import './bases/base';
 
 //IMPORTACION DE COMPONENTS
 @import './components/navegacion';
@@ -21,7 +21,7 @@
 @import './views/contacto';
 
 //IMPORTACION DE LAYOUTS
-@import './layout/footer';
+@import './layouts/footer';
 
 //IMPORTACION DE MEDIAQUERIES
 @import './utilities/media-queries';

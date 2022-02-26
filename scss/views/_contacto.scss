@@ -74,6 +74,7 @@
         border-radius: 0.4rem;
         color: $color-texto-general;
         text-transform: uppercase;
+        @include botones($color-fondo-btn, $color-hover-btn, $color-border-btn, $color-texto-general, 10px 70px);
       }
     }
   }
