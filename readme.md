@@ -20,5 +20,6 @@ Dentro de los archivos se adjunta WIREFRAME del diseño de sitio original que ob
 en el curso, por lo cual se produjeron algunos cambios en el proceso.
 
 También se adjunta el presupuesto "conceptual".
-  
+
+  Estado del proyecto: <b>TERMINADO</b>.
 
