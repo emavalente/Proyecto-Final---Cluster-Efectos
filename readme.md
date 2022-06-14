@@ -1,7 +1,7 @@
 Mi nombre es Emanuel Valente, estudiante Frontend en CODERHOUSE. 
 Este proyecto fue creado en base a la marca CLUSTER EFECTOS (fabricación de efectos para instrumentos musicales), en el cual se incorporan imágenes de productos y servicios de la empresa e información corresponiente. Posee una sección que lista sus productos en venta, como asi tambien secciones donde encontraremos usuarios del ambiente musical y formulario de contacto.
 
-<img width='50%' src='https://www.mediafire.com/view/n27ax9e77qo5knn' >
+<img width='50%' src='https://i.postimg.cc/fT5wQjky/ema-web.png' >
 
 Se realizó una estructura base utilizando código HTML.
 Se utilizaron herramientas CSS como boxmodel, flexbox y grid.
